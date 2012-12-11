@@ -52,3 +52,21 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.60.0-3
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 1.60.0-2mdv2011.0
++ Revision: 555942
+- rebuild for perl 5.12
+
+* Sun Nov 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.60.0-1mdv2010.1
++ Revision: 471174
+- import perl-HTML-Strip
+
+
+* Sun Nov 29 2009 cpan2dist 1.06-1mdv
+- initial mdv release, generated with cpan2dist
