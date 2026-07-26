@@ -1,15 +1,13 @@
 %define upstream_name    HTML-Strip
-%define upstream_version 1.06
-
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	5
+Version:    1.06
+Release:	6
 
 Summary:    Perl extension for stripping HTML markup from text
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{version}.tar.gz
 
 
 BuildRequires:	make
@@ -29,7 +27,7 @@ It does _not_ do any syntax checking (if you want that, use the
 HTML::Parser manpage), instead it merely applies the following rules:
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
